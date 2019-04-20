@@ -5,28 +5,32 @@
   <title>Andrew Tirpok</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Kanit|Noto+Sans+TC|Montserrat" rel="stylesheet">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <!-- Navbar Header -->
 <header class="fixed-top">
-  <div class="container-fluid bg-light">
+  <div class="container-fluid bg-dark">
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <h1 class="text-white bg-info rounded">Andrew Tirpok</h1>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <nav class="navbar navbar-expand-lg navbar-light py-0">
+        <h1 class="navbar-name">Andrew Tirpok</h1>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+          <span> </span>
+          <span> </span>
+          <span> </span>
+      </button>
+        <div class="collapse navbar-collapse" id="collapsingNavbar">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="navbar-brand nav-link active"  href="index.html">About<span class="sr-only">(current)</span></a>
+              <a class="navbar-brand nav-link active text-warning"  href="index.html">Design<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="navbar-brand nav-link"  href="portfolio.html">Portfolio</a>
+              <a class="navbar-brand nav-link text-white"  href="portfolio.html">Develop</a>
             </li>
             <li class="nav-item">
-              <a class="navbar-brand nav-link" href="contact.html">Contact</a>
+              <a class="navbar-brand nav-link text-white" href="contact.html">Implement</a>
             </li>
           </ul>
         </div>
@@ -34,33 +38,45 @@
     </div>
   </div>
 </header>
-
 <!-- Set background tile image for all non content area -->
 <body id="bodybackground">
   <div>
 <!-- Content Header -->
-    <div class="container containerMargin bg-white">
-      <div>
-        <h1 class="text-info">About Me</h1>
-      </div>
+    <div class="container containerMargin">
 <!-- Content - Image and Bio Information -->
-      <div class="row">
-        <div class="col-md-12">
-            <img class="img-fluid float-left imgbio" alt="Andrew Tirpok" src="assets/images/androosk.jpg">
-          <div class="col-md-12 pull-right">
-            <p>Andrew Tirpok currently owns Tirpok Cleaners, a chain of retail dry cleaning stores in the Hunterdon County, New Jersey area. Tirpok Cleaners is a family business, started in 1936 by Andrew's grandfather. It's the leading brand in its market. If you live in Hunterdon County, you've probably had something cleaned there or worked there at some point in your life.</p>
-            <p>As a small business owner for 25 years, Andrew has worn lots of hats. He might go from a marketing meeting in the morning to pressing shirts in the afternoon. He can even fix the shirt press if it breaks down. Mechanical skills, IT Skills, Bookkeeping Skills. The whole package.</p>
-            <p>When you own a small business, you have to be resourceful.</p>
-            <p>Andrew is currently seeking new challenges in a different field. It's time for a career change.</p>
-          </div>
-        </div>
+
+      <img class="img-bio" alt="Andrew Tirpok" src="assets/images/andrew.jpg">
+      <div>
+        <p class="design-quote">"Design is the intermediary between information and understanding."<br><i class="pull-right">Hans Hoffman</i></p>
       </div>
     </div>
   </div>
+  <div class="container-background">
+      <div class="design-header">
+        <p>Hey, my name is Andrew.</p>
+        <p>I have a passion for designing and building beautiful, functional things. I'm looking to join a team of like minded developers to help make the world a more beautiful place!</p>
+      </div>
+      <div class="design-area">
+        <p>I have a strong background in design, and it shows in my work.</p>
+        <p>some shitty text goes here</p>
+        <p>also, there's probably some more shitty text that I'll put here</p>
+        <p>in fact, there's a lot of stupid shit I'm going to have to say to make this thing look like I actually think someone is going to look at it at some point, right?</p>
+      </div>
+      <div>
+        <p class="develop-quote">"Someone asked me, if I were stranded on a desert island what book would I bring ... How to Build a Boat."<br><i class="pull-right">Steven Wright</i></p>
+      </div>
+      <img class="asset-pic" alt="parks-n-stops" src="assets/images/parksnstops.jpg">
+      <img class="asset-pic" alt="star wars rpg" src="assets/images/starwarsrpg.jpg">
+      <img class="asset-pic" alt="multiplayer rochambo" src="assets/images/mprps.jpg">
+      <img class="asset-pic" alt="word guess game" src="assets/images/wordguess.jpg">
+  </div>
 <!-- Footer -->
-  <nav class="navbar fixed-bottom navbar-light bg-dark text-white fBorder">
+  <nav class="navbar navbar-light bg-dark text-white fBorder">
       <div class="container">
-        <h5 class="mx-auto">Copyright&copy; 2019</h5>
+        <h5 class="mx-auto">Copyright&copy; 2019 Andrew Tirpok</h5>
+        <a class="navbar-brand nav-brand" href="https://github.com/androosk" target="_blank"><img src="assets/images/GitHub-Mark-Light-32px.png"></a>
+        <a class="navbar-brand nav-brand text-white" href="https://www.linkedin.com/in/andrew-tirpok-05296815" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a class="navbar-brand nav-brand text-white" href="https://www.instagram.com/androosk/" target="blank"><i class="fab fa-instagram"></i></a>
       </div>
   </nav>
 <!-- Javascript links for toggle button-->

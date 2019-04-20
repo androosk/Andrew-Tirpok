@@ -1,2 +1,2 @@
-# bootstrap-portfolio
-Bootstrap Portfolio
+# Andrew Tirpok
+Welcome to my Github portfolio!
