@@ -9,43 +9,12 @@ font-family: 'Kanit', sans-serif; */
 h1 {
   font-family:'Noto Sans TC', sans-serif;
 }
-
-
-
 a {
   font-family: 'Noto Sans TC', sans-serif;
   color: whitesmoke;
   cursor: pointer;
 }
-
-.navbar-name {
-  color: whitesmoke;+
-  text-align: left;
-  padding-top: -10px;
-  margin-top: 8px;
-}
-
-.containerMargin {
-
-  margin: 0 auto;
-  overflow: hidden;
-  background: none;
-}
-
-.img-bio {
-  border-radius: 100%;
-  image-orientation: from-image;
-
-}
-
-.card {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.fBorder {
-  border-top:6px solid #4aaaaa;
-}
+/* Hamburger Animation */
 .navbar-toggler:focus,
 .navbar-toggler:active {
     outline: 0;
@@ -103,6 +72,37 @@ a {
     opacity: 0.9;
 }
 
+.navbar-name {
+  color: whitesmoke;+
+  text-align: left;
+  padding-top: -10px;
+  margin-top: 8px;
+}
+
+.containerMargin {
+
+  margin: 0 auto;
+  overflow: hidden;
+  background: none;
+}
+
+.img-bio {
+  border-radius: 20%;
+  image-orientation: from-image;
+  margin-top: 90px;
+
+}
+
+.card {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.fBorder {
+  border-top:6px solid #4aaaaa;
+}
+
+
 .design-quote, .develop-quote {
   font-family: 'Montserrat', sans-serif;
   font-size: 10px;
@@ -115,10 +115,10 @@ a {
 .develop-quote {
   margin: 20px 15px 20px 60px;
 }
-.container-background: {
+/* .container-background {
   width:100%;
   position: relative;
-}
+} */
 .container-background::before {
   background-image: url(../images/home-office-599475_640.jpg);
   background-size: cover;
@@ -207,6 +207,7 @@ h5 {
     right: 0px;
   }
   .img-bio {
+    border-radius: 100%;
     display: block;
     width: 200px;
     height: 200px;
