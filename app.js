@@ -23,6 +23,9 @@ $('#design-button, #develop-button, #implement-button').click(function(event){
   fnum = $(this).attr('data-num')
   pageLoad()
 })
+$('.navbar-collapse ul li a').click(function() {
+  $('.navbar-toggler:visible').click()
+})
 //Page switching and loading function
 function pageLoad() {
   $('#section-quote').text(pageyStuff[parseInt(fnum)+1])
@@ -39,3 +42,13 @@ function pageLoad() {
 }
 //Initial page load
 pageLoad()
+
+document.addEventListener('DOMContentLoaded', function(event){
+  let x = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+  if (x < 768) {
+    $('.bio-pic').removeClass('col-4')
+    $('.bio-pic').addClass('col-12')
+    $('.design-header').addClass('mini-design-header')
+    $('.design-header').removeClass('col container-fluid design-header')
+  }
+})
