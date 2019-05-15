@@ -52,16 +52,16 @@
           <img class="img-bio" alt="Andrew Tirpok" src="assets/images/andrew.jpg">
         </div>
         <div class='col container-fluid design-header'>
-          <h4>Hey, my name is Andrew.</h4>
+          <p class="p-text">Hey, my name is Andrew</p>
           <p class="design-text">Thank you for visiting my portfolio. The links at the top will take you to pages where you can see more about my skill sets and deployments.</p>
           <p class="design-text">I have a passion for designing and building beautiful, functional things. I'm looking to join a team of like minded developers to help make the world a more beautiful place!</p>
-          <h4>Education</h4>
+          <p class="p-text">Education</p>
           <ul>
-            <li>Franklin Pierce University: Bachelor of Arts in Mass Communication, minor in Graphic Arts</li>
-            <li>Rutgers University: Master's in Communication and Information Studies</li>
-            <li>Rutgers University: Full Stack Software Development Bootcamp</li>
+            <li class="design-text">Franklin Pierce University: Bachelor of Arts in Mass Communication, minor in Graphic Arts</li>
+            <li class="design-text">Rutgers University: Master's in Communication and Information Studies</li>
+            <li class="design-text">Rutgers University: Full Stack Software Development Bootcamp</li>
           </ul>
-          <h4>Contact Me</h4>
+          <p class="p-text">Contact Me</p>
           <p class="design-text">Click on one of the links at the bottom of the page to see my work, professional history or my instagram</p>
           <p class = "design-text">You can reach me by email at <a href='mailto:atirpok3@gmail.com'>atirpok3@gmail.com</a></p>
         </div>
@@ -69,65 +69,185 @@
 
       </div>
       <div hidden id='implement-section' class="container-fluid">
-        <h4 class="text-center">Here is some of my work to date. Hover over the image to see a list of tools, frameworks and links to the repository and/or app</h4>
+        <h4 class="text-center">Here is some of my work to date. Hover over the image (or select in mobile) to see a description of the app and a list of tools and frameworks. Click on the image to go to the repository and see my beautiful code. From the readme on Github, you can get a link to the app if available. Console apps will need to be cloned and run locally.</h4>
 
         <div class="asset-thing-container">
-          <img class="asset-pic" alt="parks-n-stops" src="assets/images/word-guess-console.jpg">
+          <img class="asset-pic" alt="bamazon app" src="assets/images/bamazon.jpg">
+          <a href="https://github.com/androosk/bamazon-console-app" target="_blank">
           <div class="overlay">
-            <h4 class="text">Console Word Guess Game</h4>
+            <h4 class="text"><u>Bamazon Console App</u></h4>
             <div class="row">
-              <div class="col-4">
-                <h4>Functions</h4>
+              <div class="col-5">
+                <h4><u>Functions</u></h4>
+                <p class="text-left">A Command Line Interface (CLI) app that simulates an online store. Three user levels included are Customer, Manager and Superviser.</p>
               </div>
               <div class="col-1"></div>
-              <div class="col-4">
-                <h4>Tools & Frameworks</h4>
+              <div class="col-5">
+                <h4><u>Tools & Frameworks</u></h4>
+                <ul class="text-left">
+                  <li>Node.js</li>
+                  <li>NPM Inquirer</li>
+                  <li>MySQL Database</li>
+                  <li>NPM cli-table2 for pretty printing MySQL queries</li>
+                  <li>NPM colors for more pretty printing features</li>
+                </ul>
               </div>
             </div>
           </div>
+        </a>
         </div>
 
         <div class="asset-thing-container">
-          <img class="asset-pic" alt="parks-n-stops" src="assets/images/liri-console.jpg">
+          <img class="asset-pic" alt="console-word-guess" src="assets/images/word-guess-console.jpg">
+          <a href="https://github.com/androosk/constructor-word-guess" target="_blank">
           <div class="overlay">
-            <h4 class="text">Console LIRI Bot</h4>
+            <h4 class="text"><u>Console Word Guess Game</u></h4>
             <div class="row">
-              <div class="col-4">
-                <h4>Functions</h4>
+              <div class="col-5">
+                <h4><u>Functions</u></h4>
+                <p class="text-left">A word guess game that runs in the Command Line Interface (CLI) using javascript object constructors</p>
               </div>
               <div class="col-1"></div>
-              <div class="col-4">
-                <h4>Tools & Frameworks</h4>
+              <div class="col-5">
+                <h4><u>Tools & Frameworks</u></h4>
+                <ul class="text-left">
+                  <li>Node.js</li>
+                  <li>NPM Inquirer</li>
+                </ul>
               </div>
             </div>
           </div>
+          </a>
+        </div>
+
+        <div class="asset-thing-container">
+          <img class="asset-pic" alt="console-LIRI-bot" src="assets/images/liri-console.jpg">
+          <a href="https://github.com/androosk/liri-node-app" target="_blank">
+          <div class="overlay">
+            <h4 class="text"><u>Console LIRI Bot</u></h4>
+            <div class="row">
+              <div class="col-5">
+                <h4><u>Functions</u></h4>
+                <p class="text-left">Text Based SIRI type bot that does limited searches in OMDB, Bandsintown and Spotify APIs. Runs in Command Line Interface.</p>
+              </div>
+              <div class="col-1"></div>
+              <div class="col-5">
+                <h4><u>Tools & Frameworks</u></h4>
+                <ul class="text-left">
+                  <li>Node.js</li>
+                  <li>NPM inquirer</li>
+                  <li>NPM dotenv</li>
+                  <li>NPM axios</li>
+                  <li>Moment.js</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          </a>
         </div>
 
         <div class="asset-thing-container">
           <img class="asset-pic" alt="parks-n-stops" src="assets/images/parksnstops.jpg">
+          <a href="https://github.com/kangkang0804/National-Parks" target="_blank">
           <div class="overlay">
-            <h4 class="text">Parks 'N' Stops</h4>
+            <h4 class="text"><u>Parks 'N' Stops</u></h4>
             <div class="row">
-              <div class="col-4">
-                <h4>Functions</h4>
+              <div class="col-5">
+                <h4><u>Functions</u></h4>
+                <p class="text-left">Web app built on Google Maps and National Parks Service APIs that finds and navigates to National Parks sites and points of interest stops along the way.</p>
               </div>
               <div class="col-1"></div>
-              <div class="col-4">
-                <h4>Tools & Frameworks</h4>
+              <div class="col-5">
+                <h4><u>Tools & Frameworks</u></h4>
+                <ul class="text-left">
+                  <li>HTML, CSS, Javascript</li>
+                  <li>Firebase Database</li>
+                  <li>Google Maps API</li>
+                  <li>NPS and Openweather APIs</li>
+                  <li>Routeboxer</li>
+                  <li>Deployed to Heroku</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="asset-thing-container">
+          <img class="asset-pic" alt="star wars rpg" src="assets/images/starwarsrpg.jpg">
+          <a href="https://github.com/androosk/Star-Wars-Themed-RPG-Game" target="_blank">
+          <div class="overlay">
+            <h4 class="text"><u>Star Wars Themed Basic RPG</u></h4>
+            <div class="row">
+              <div class="col-5">
+                <h4><u>Functions</u></h4>
+                <p class="text-left">Web app basic RPG where you choose a character to play and fight other star wars characters in click play. Class project.</p>
+              </div>
+              <div class="col-1"></div>
+              <div class="col-5">
+                <h4><u>Tools & Frameworks</u></h4>
+                <ul class="text-left">
+                  <li>HTML, CSS, Javascript</li>
+                  <li>Original artwork</li>
+                  <li>Deployed to github.io</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="asset-thing-container">
+          <img class="asset-pic" alt="multiplayer rochambo" src="assets/images/mprps.jpg">
+          <a href="https://github.com/androosk/rps-multiplayer" target="_blank">
+          <div class="overlay">
+            <h4 class="text"><u>Two Player Rock Paper Scissors</u></h4>
+            <div class="row">
+              <div class="col-5">
+                <h4><u>Functions</u></h4>
+                <p class="text-left">Web app built on Fireabase Realtime framework that allows two players to compete on separate devices in a classic game of Rock, Paper, Scissors.</p>
+              </div>
+              <div class="col-1"></div>
+              <div class="col-5">
+                <h4><u>Tools & Frameworks</u></h4>
+                <ul class="text-left">
+                  <li>HTML, CSS, Javascript</li>
+                  <li>Firebase Realtime Database</li>
+                  <li>Two player chat function</li>
+                  <li>Full Mobile optimization</li>
+                  <li>Deployed to Firebase</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="asset-thing-container">
+          <img class="asset-pic" alt="word guess game" src="assets/images/wordguess.jpg">
+          <a href="https://github.com/androosk/word-guess-game" target="_blank">
+          <div class="overlay">
+            <h4 class="text"><u>Word Guess Game</u></h4>
+            <div class="row">
+              <div class="col-5">
+                <h4><u>Functions</u></h4>
+                <p class="text-left">1980s Themed web app allows user to guess up to ten 1980s slang words such as "radical" and "grody". Designed to look like early 1980s home computer BBS.</p>
+              </div>
+              <div class="col-1"></div>
+              <div class="col-5">
+                <h4><u>Tools & Frameworks</u></h4>
+                <ul class="text-left">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                  <li>Deployed to github.io</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="asset-thing-container">
-          <img class="asset-pic" alt="star wars rpg" src="assets/images/starwarsrpg.jpg">
-        </div>
-        <div class="asset-thing-container">
-          <img class="asset-pic" alt="multiplayer rochambo" src="assets/images/mprps.jpg">
-        </div>
-        <div class="asset-thing-container">
-          <img class="asset-pic" alt="word guess game" src="assets/images/wordguess.jpg">
-        </div>
       </div>
+      </a>
     </div>
       <!-- <div hidden id="develop-section"> -->
         <!-- start flip card section -->

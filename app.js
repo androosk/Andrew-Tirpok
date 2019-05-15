@@ -50,5 +50,6 @@ document.addEventListener('DOMContentLoaded', function(event){
     $('.bio-pic').addClass('col-12')
     $('.design-header').addClass('mini-design-header')
     $('.design-header').removeClass('col container-fluid design-header')
+    $('#overlay-area').attr('hidden', 'true')
   }
 })
