@@ -438,6 +438,9 @@ h5 {
   p, li, .fab {
     font-size: 12px;
   }
+  .smol {
+    font-size: 9px;
+  }
   .asset-pic {
     max-width: 90%;
   }
