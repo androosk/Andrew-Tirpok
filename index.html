@@ -24,13 +24,13 @@
         <div class="collapse navbar-collapse" id="collapsingNavbar">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a id="design-button" data='design' data-num='0'>Design<span class="sr-only">(current)</span></a>
+              <a id="design-button"  href="#design-section" data='design' data-num='0'>Design<span class="sr-only">(current)</span></a>
             </li>
             <li class='nav-item'>
-              <a id='develop-button' data='develop' data-num='5'>Develop</a>
+              <a id='develop-button' href="#develop-section" data='develop' data-num='5'>Develop</a>
             </li>
             <li class="nav-item">
-              <a id='implement-button' data='implement' data-num='10'>Implement</a>
+              <a id='implement-button' href="#implement-section" data='implement' data-num='10'>Implement</a>
             </li>
           </ul>
         </div>
@@ -40,21 +40,22 @@
 </header>
 <!-- Set background tile image for all non content area -->
 <body class='container-background'>
-    <div class="container container-margin">
+  <!-- Top Bio Section -->
+    <div id="design-section" class="container container-margin">
       <div class="row">
         <div class="design-quote">
-          <p id="section-quote"></p>
-          <p id="section-author" class="name-quote"></p>
+          <p>Design is the intermediary between information and understanding.</p>
+          <p class="name-quote">-- Hans Hoffman</p>
         </div>
       </div>
-      <div id='design-section' class="row">
+      <div class="row">
         <div class="col-4 bio-pic">
           <img class="img-bio" alt="Andrew Tirpok" src="assets/images/andrew.jpg">
         </div>
         <div class='col container-fluid design-header'>
-          <p class="p-text">Hey, my name is Andrew</p>
-          <p class="design-text">Thank you for visiting my portfolio. The links at the top will take you to pages where you can see more about my skill sets and deployments.</p>
-          <p class="design-text">I have a passion for designing and building beautiful, functional things. I'm looking to join a team of like minded developers to help make the world a more beautiful place!</p>
+          <p class="p-text">Thank you for visiting my portfolio!</p>
+          <p class="design-text">I have a passion for designing and building beautiful, functional things.</p>
+          <p class="design-text">I'm looking to join a team of like minded developers to help make the world a more beautiful place!</p>
           <p class="p-text">Education</p>
           <ul>
             <li class="design-text">Franklin Pierce University: Bachelor of Arts in Mass Communication, minor in Graphic Arts</li>
@@ -65,252 +66,81 @@
           <p class="design-text">Click on one of the links at the bottom of the page to see my work, professional history or my instagram</p>
           <p class = "design-text">You can reach me by email at <a href='mailto:atirpok3@gmail.com'>atirpok3@gmail.com</a></p>
         </div>
-
-
       </div>
-      <div hidden id='implement-section' class="container-fluid">
-        <h4 class="text-center heading-text">Here is some of my work to date. Hover over the image (or select in mobile) for a description and a list of tools/frameworks. Click on the image to see my beautiful code. The readme will have a link to the app if deployed. Console apps have run instructions.</h4>
-
-        <div class="asset-thing-container">
-          <img class="asset-pic" alt="bims-burgers" src="assets/images/bims.jpg">
-          <a href="https://github.com/androosk/bims-burgers" target="_blank">
-          <div class="overlay">
-            <h4 class="text"><u>Bim's Burger Stand</u></h4>
-            <div class="row">
-              <div class="col-5">
-                <h4 class="smol"><u>Functions</u></h4>
-                <p class="text-left smol">Bim the flat coat retriever wanted to run a burger stand, so we gave her one. Order a burger, devour a burger, come see Bim and say hello!</p>
-              </div>
-              <div class="col-1"></div>
-              <div class="col-5">
-                <h4 class="smol"><u>Tools & Frameworks</u></h4>
-                <ul class="text-left">
-                  <li class="smol">Node.js</li>
-                  <li class="smol">Express Server</li>
-                  <li class="smol">Handlebars Templating Engine</li>
-                  <li class="smol">MySQL</li>
-                  <li class="smol">NPM Method-Override</li>
-                  <li class="smol">Bootstrap 4</li>
-                  <li class="smol">MVC (Model/View/Controller) method</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </a>
-        </div>
-
-        <div class="asset-thing-container">
-          <img class="asset-pic" alt="ohana finder app" src="assets/images/ohanaapp.jpg">
-          <a href="https://github.com/androosk/ohanafinder" target="_blank">
-          <div class="overlay">
-            <h4 class="text"><u>Ohana Finder App</u></h4>
-            <div class="row">
-              <div class="col-5">
-                <h4 class="smol"><u>Functions</u></h4>
-                <p class="text-left smol">A fun app based on the Disney Movie Lilo & Stitch theme. Take a brief questionnaire to match with another user and find your Ohana</p>
-              </div>
-              <div class="col-1"></div>
-              <div class="col-5">
-                <h4 class="smol"><u>Tools & Frameworks</u></h4>
-                <ul class="text-left">
-                  <li class="smol">Node.js</li>
-                  <li class="smol">Express Server</li>
-                  <li class="smol">HTML 5</li>
-                  <li class="smol">CSS 3</li>
-                  <li class="smol">Javascript</li>
-                  <li class="smol">jQuery</li>
-                  <li class="smol">Bootstrap 4</li>
-                  <li class="smol">Chosen.js</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </a>
-        </div>
-
-        <div class="asset-thing-container">
-          <img class="asset-pic" alt="bamazon app" src="assets/images/bamazon.jpg">
-          <a href="https://github.com/androosk/bamazon-console-app" target="_blank">
-          <div class="overlay">
-            <h4 class="text"><u>Bamazon Console App</u></h4>
-            <div class="row">
-              <div class="col-5">
-                <h4 class="smol"><u>Functions</u></h4>
-                <p class="text-left smol">A Command Line Interface (CLI) app that simulates an online store. Three user levels included are Customer, Manager and Superviser.</p>
-              </div>
-              <div class="col-1"></div>
-              <div class="col-5">
-                <h4 class="smol"><u>Tools & Frameworks</u></h4>
-                <ul class="text-left">
-                  <li class="smol">Node.js</li>
-                  <li class="smol">NPM Inquirer</li>
-                  <li class="smol">MySQL Database</li>
-                  <li class="smol">NPM cli-table2 for pretty printing MySQL queries</li>
-                  <li class="smol">NPM colors for more pretty printing features</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </a>
-        </div>
-
-        <div class="asset-thing-container">
-          <img class="asset-pic" alt="console-word-guess" src="assets/images/word-guess-console.jpg">
-          <a href="https://github.com/androosk/constructor-word-guess" target="_blank">
-          <div class="overlay">
-            <h4 class="text"><u>Console Word Guess Game</u></h4>
-            <div class="row">
-              <div class="col-5">
-                <h4 class="smol"><u>Functions</u></h4>
-                <p class="text-left smol">A word guess game that runs in the Command Line Interface (CLI) using javascript object constructors</p>
-              </div>
-              <div class="col-1"></div>
-              <div class="col-5">
-                <h4 class="smol"><u>Tools & Frameworks</u></h4>
-                <ul class="text-left">
-                  <li class="smol">Node.js</li>
-                  <li class="smol">NPM Inquirer</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          </a>
-        </div>
-
-        <div class="asset-thing-container">
-          <img class="asset-pic" alt="console-LIRI-bot" src="assets/images/liri-console.jpg">
-          <a href="https://github.com/androosk/liri-node-app" target="_blank">
-          <div class="overlay">
-            <h4 class="text"><u>Console LIRI Bot</u></h4>
-            <div class="row">
-              <div class="col-5">
-                <h4 class="smol"><u>Functions</u></h4>
-                <p class="text-left smol">Text Based SIRI type bot that does limited searches in OMDB, Bandsintown and Spotify APIs. Runs in Command Line Interface.</p>
-              </div>
-              <div class="col-1"></div>
-              <div class="col-5">
-                <h4 class="smol"><u>Tools & Frameworks</u></h4>
-                <ul class="text-left">
-                  <li class="smol">Node.js</li>
-                  <li class="smol">NPM inquirer</li>
-                  <li class="smol">NPM dotenv</li>
-                  <li class="smol">NPM axios</li>
-                  <li class="smol">Moment.js</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          </a>
-        </div>
-
-        <div class="asset-thing-container">
-          <img class="asset-pic" alt="parks-n-stops" src="assets/images/parksnstops.jpg">
-          <a href="https://github.com/kangkang0804/National-Parks" target="_blank">
-          <div class="overlay">
-            <h4 class="text"><u>Parks 'N' Stops</u></h4>
-            <div class="row">
-              <div class="col-5">
-                <h4 class="smol"><u>Functions</u></h4>
-                <p class="text-left smol">Web app built on Google Maps and National Parks Service APIs that finds and navigates to National Parks sites and points of interest stops along the way.</p>
-              </div>
-              <div class="col-1"></div>
-              <div class="col-5">
-                <h4 class="smol"><u>Tools & Frameworks</u></h4>
-                <ul class="text-left">
-                  <li class="smol">HTML, CSS, Javascript</li>
-                  <li class="smol">Firebase Database</li>
-                  <li class="smol">Google Maps API</li>
-                  <li class="smol">NPS and Openweather APIs</li>
-                  <li class="smol">Routeboxer</li>
-                  <li class="smol">Deployed to Heroku</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          </a>
-        </div>
-
-        <div class="asset-thing-container">
-          <img class="asset-pic" alt="star wars rpg" src="assets/images/starwarsrpg.jpg">
-          <a href="https://github.com/androosk/Star-Wars-Themed-RPG-Game" target="_blank">
-          <div class="overlay">
-            <h4 class="text"><u>Star Wars Themed Basic RPG</u></h4>
-            <div class="row">
-              <div class="col-5">
-                <h4 class="smol"><u>Functions</u></h4>
-                <p class="text-left smol">Web app basic RPG where you choose a character to play and fight other star wars characters in click play. Class project.</p>
-              </div>
-              <div class="col-1"></div>
-              <div class="col-5">
-                <h4 class="smol"><u>Tools & Frameworks</u></h4>
-                <ul class="text-left">
-                  <li class="smol">HTML, CSS, Javascript</li>
-                  <li class="smol">Original artwork</li>
-                  <li class="smol">Deployed to github.io</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          </a>
-        </div>
-
-        <div class="asset-thing-container">
-          <img class="asset-pic" alt="multiplayer rochambo" src="assets/images/mprps.jpg">
-          <a href="https://github.com/androosk/rps-multiplayer" target="_blank">
-          <div class="overlay">
-            <h4 class="text"><u>Two Player Rock Paper Scissors</u></h4>
-            <div class="row">
-              <div class="col-5">
-                <h4 class="smol"><u>Functions</u></h4>
-                <p class="text-left smol">Web app built on Fireabase Realtime framework that allows two players to compete on separate devices in a classic game of Rock, Paper, Scissors.</p>
-              </div>
-              <div class="col-1"></div>
-              <div class="col-5">
-                <h4 class="smol"><u>Tools & Frameworks</u></h4>
-                <ul class="text-left">
-                  <li class="smol">HTML, CSS, Javascript</li>
-                  <li class="smol">Firebase Realtime Database</li>
-                  <li class="smol">Two player chat function</li>
-                  <li class="smol">Full Mobile optimization</li>
-                  <li class="smol">Deployed to Firebase</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          </a>
-        </div>
-
-        <div class="asset-thing-container">
-          <img class="asset-pic" alt="word guess game" src="assets/images/wordguess.jpg">
-          <a href="https://github.com/androosk/word-guess-game" target="_blank">
-          <div class="overlay">
-            <h4 class="text"><u>Word Guess Game</u></h4>
-            <div class="row">
-              <div class="col-5">
-                <h4 class="smol"><u>Functions</u></h4>
-                <p class="text-left smol">1980s Themed web app allows user to guess up to ten 1980s slang words such as "radical" and "grody". Designed to look like early 1980s home computer BBS.</p>
-              </div>
-              <div class="col-1"></div>
-              <div class="col-5">
-                <h4 class="smol"><u>Tools & Frameworks</u></h4>
-                <ul class="text-left">
-                  <li class="smol">HTML</li>
-                  <li class="smol">CSS</li>
-                  <li class="smol">Javascript</li>
-                  <li class="smol">Deployed to github.io</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </a>
     </div>
+
+
       <!-- <div hidden id="develop-section"> -->
         <!-- start flip card section -->
-        <div hidden id="develop-section" class="wrapper">
+        <div id="develop-section" class="container">
+          <div class="row">
+            <div class="design-quote">
+              <p>Someone asked me, if I were stranded on a desert island what book would I bring ... "How to Build a Boat."</p>
+              <p class="name-quote">-- Steven Wright</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
           <h4 class="text-center heading-text">I've worked with a variety of tools and frameworks, and enjoy learning and adapting to new ones.</h4>
           <div class="cols">
+            <!-- MERN Stack -->
+            <div class="colm" ontouchstart="this.classList.toggle('hover');">
+              <div class="container">
+                <div class="front" style="background-image: url(./assets/images/mongodb-logo.png)">
+                  <div class="inner">
+                    <p>MongoDB</p>
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="inner">
+                    <p>A popular NoSQL database</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="colm" ontouchstart="this.classList.toggle('hover');">
+              <div class="container">
+                <div class="front" style="background-image: url(./assets/images/express.png)">
+                  <div class="inner">
+                    <p>Express Server</p>
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="inner">
+                    <p>A server application for Node.js</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="colm" ontouchstart="this.classList.toggle('hover');">
+              <div class="container">
+                <div class="front" style="background-image: url(./assets/images/react_logo.png)">
+                  <div class="inner">
+                    <p>React</p>
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="inner">
+                    <p>A User Interface (UI) library built on JavaScript</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="colm" ontouchstart="this.classList.toggle('hover');">
+              <div class="container">
+                <div class="front" style="background-image: url(./assets/images/nodejs-logo-FBE122E377-seeklogo.com.png)">
+                  <div class="inner">
+                    <p>NODE.JS</p>
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="inner">
+                    <p>Javascript on the server side? Yes, please!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="colm" ontouchstart="this.classList.toggle('hover');">
               <div class="container">
                 <div class="front" style="background-image: url(./assets/images/html-svg-2.png)">
@@ -367,20 +197,7 @@
                 </div>
               </div>
             </div>
-            <div class="colm" ontouchstart="this.classList.toggle('hover');">
-              <div class="container">
-                <div class="front" style="background-image: url(./assets/images/nodejs-logo-FBE122E377-seeklogo.com.png)">
-                  <div class="inner">
-                    <p>NODE.JS</p>
-                  </div>
-                </div>
-                <div class="back">
-                  <div class="inner">
-                    <p>Javascript on the server side? Yes, please!</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+
             <div class="colm" ontouchstart="this.classList.toggle('hover');">
               <div class="container">
                 <div class="front" style="background-image: url(./assets/images/jquery-logo.png)">
@@ -404,7 +221,7 @@
                 </div>
                 <div class="back">
                   <div class="inner">
-                    <p>GIT stage, commit, flow? Got it! </p>
+                    <p>Version control platform for software apps</p>
                   </div>
                 </div>
               </div>
@@ -418,25 +235,12 @@
                 </div>
                 <div class="back">
                   <div class="inner">
-                    <p>A Google database and development platform</p>
+                    <p>A Google NoSQL database and development platform</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="colm" ontouchstart="this.classList.toggle('hover');">
-              <div class="container">
-                <div class="front" style="background-image: url(./assets/images/mongodb-logo.png)">
-                  <div class="inner">
-                    <p>MongoDB</p>
-                  </div>
-                </div>
-                <div class="back">
-                  <div class="inner">
-                    <p>One of the most popular NoSQL databases out there</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+
             <div class="colm" ontouchstart="this.classList.toggle('hover');">
               <div class="container">
                 <div class="front" style="background-image: url(./assets/images/mysql.svg)">
@@ -446,12 +250,342 @@
                 </div>
                 <div class="back">
                   <div class="inner">
-                    <p>Oh SQL, MySQL</p>
+                    <p>Structured Query Language for creating and manipulating databases</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+
+        <div id='implement-section' class="container">
+          <div class="row">
+            <div class="design-quote">
+              <p>Vision without action is merely a dream. Action without vision just passes the time. Vision with action can change the world.</p>
+              <p class="name-quote">-- Joel A. Barker</p>
+            </div>
+          </div>
+            <h4 class="text-center heading-text">Here is some of my work to date. Hover over the image (or select in mobile) for a description and a list of tools/frameworks. Click on the image to see my beautiful code. The readme will have a link to the app if deployed. Console apps have run instructions.</h4>
+    
+            <div class="asset-thing-container">
+                <img class="asset-pic" alt="buy-ally" src="assets/images/promotevote.png">
+                <a href="https://github.com/michjmend/PROJECT2" target="_blank">
+                <div class="overlay">
+                  <h4 class="text"><u>Promote The Vote</u></h4>
+                  <div class="row">
+                    <div class="col-5">
+                      <h4 class="smol"><u>Functions</u></h4>
+                      <p class="text-left smol">In response to the election tampering and misinformation about our democracy, Promote the Vote is intended as a one-stop-shop where voters can obtain accurate information on polling in their district or state. Users can post their stories about why they vote and what voting means to them.</p>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-5">
+                      <h4 class="smol"><u>Tools & Frameworks</u></h4>
+                      <ul class="text-left">
+                        <li class="smol">MongoDB/Mongoose</li>
+                        <li class="smol">Express Server</li>
+                        <li class="smol">React.js</li>
+                        <li class="smol">Node.js</li>
+                        <li class="smol">Secure User Auth</li>
+                        <li class="smol">Cloudinary image and video storage</li>
+                        <li class="smol">Deployed to heroku</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              </div>
+
+            <div class="asset-thing-container">
+                <img class="asset-pic" alt="buy-ally" src="assets/images/buyally.png">
+                <a href="https://github.com/michjmend/PROJECT2" target="_blank">
+                <div class="overlay">
+                  <h4 class="text"><u>Buy Ally</u></h4>
+                  <div class="row">
+                    <div class="col-5">
+                      <h4 class="smol"><u>Functions</u></h4>
+                      <p class="text-left smol">Users can share images and reviews of items they've purchased, and share their experience with other like-minded shoppers. Users can search the posts of others by category</p>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-5">
+                      <h4 class="smol"><u>Tools & Frameworks</u></h4>
+                      <ul class="text-left">
+                        <li class="smol">Node.js</li>
+                        <li class="smol">Express Server</li>
+                        <li class="smol">Handlebars Templating Engine</li>
+                        <li class="smol">MySQL/Sequelize</li>
+                        <li class="smol">Passport User Auth</li>
+                        <li class="smol">Cloudinary image storage</li>
+                        <li class="smol">Deployed to heroku</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              </div>
+
+            <div class="asset-thing-container">
+                <img class="asset-pic" alt="new-yorker-mag-scraper" src="assets/images/newyorker.png">
+                <a href="https://github.com/androosk/NewYorkerMagScraper" target="_blank">
+                <div class="overlay">
+                  <h4 class="text"><u>The New Yorker Magazine Scraper</u></h4>
+                  <div class="row">
+                    <div class="col-5">
+                      <h4 class="smol"><u>Functions</u></h4>
+                      <p class="text-left smol">Scrape articles from the front page of The New Yorker's Website. You can create a secure account, save articles for later and make notes on those articles.</p>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-5">
+                      <h4 class="smol"><u>Tools & Frameworks</u></h4>
+                      <ul class="text-left">
+                        <li class="smol">Node.js</li>
+                        <li class="smol">Express Server</li>
+                        <li class="smol">Handlebars Templating Engine</li>
+                        <li class="smol">MongoDB/Mongoose</li>
+                        <li class="smol">Passport User Auth</li>
+                        <li class="smol">Puppeteer Headless Browser</li>
+                        <li class="smol">Cheerio.js</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              </div>
+
+
+            <div class="asset-thing-container">
+              <img class="asset-pic" alt="bims-burgers" src="assets/images/bims.jpg">
+              <a href="https://github.com/androosk/bims-burgers" target="_blank">
+              <div class="overlay">
+                <h4 class="text"><u>Bim's Burger Stand</u></h4>
+                <div class="row">
+                  <div class="col-5">
+                    <h4 class="smol"><u>Functions</u></h4>
+                    <p class="text-left smol">Bim the flat coat retriever wanted to run a burger stand, so we gave her one. Order a burger, devour a burger, come see Bim and say hello!</p>
+                  </div>
+                  <div class="col-1"></div>
+                  <div class="col-5">
+                    <h4 class="smol"><u>Tools & Frameworks</u></h4>
+                    <ul class="text-left">
+                      <li class="smol">Node.js</li>
+                      <li class="smol">Express Server</li>
+                      <li class="smol">Handlebars Templating Engine</li>
+                      <li class="smol">MySQL</li>
+                      <li class="smol">NPM Method-Override</li>
+                      <li class="smol">Bootstrap 4</li>
+                      <li class="smol">MVC (Model/View/Controller) method</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </a>
+            </div>
+    
+            <div class="asset-thing-container">
+              <img class="asset-pic" alt="ohana finder app" src="assets/images/ohanaapp.jpg">
+              <a href="https://github.com/androosk/ohanafinder" target="_blank">
+              <div class="overlay">
+                <h4 class="text"><u>Ohana Finder App</u></h4>
+                <div class="row">
+                  <div class="col-5">
+                    <h4 class="smol"><u>Functions</u></h4>
+                    <p class="text-left smol">A fun app based on the Disney Movie Lilo & Stitch theme. Take a brief questionnaire to match with another user and find your Ohana</p>
+                  </div>
+                  <div class="col-1"></div>
+                  <div class="col-5">
+                    <h4 class="smol"><u>Tools & Frameworks</u></h4>
+                    <ul class="text-left">
+                      <li class="smol">Node.js</li>
+                      <li class="smol">Express Server</li>
+                      <li class="smol">HTML 5</li>
+                      <li class="smol">CSS 3</li>
+                      <li class="smol">Javascript</li>
+                      <li class="smol">jQuery</li>
+                      <li class="smol">Bootstrap 4</li>
+                      <li class="smol">Chosen.js</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </a>
+            </div>
+    
+            <div class="asset-thing-container">
+              <img class="asset-pic" alt="bamazon app" src="assets/images/bamazon.jpg">
+              <a href="https://github.com/androosk/bamazon-console-app" target="_blank">
+              <div class="overlay">
+                <h4 class="text"><u>Bamazon Console App</u></h4>
+                <div class="row">
+                  <div class="col-5">
+                    <h4 class="smol"><u>Functions</u></h4>
+                    <p class="text-left smol">A Command Line Interface (CLI) app that simulates an online store. Three user levels included are Customer, Manager and Superviser.</p>
+                  </div>
+                  <div class="col-1"></div>
+                  <div class="col-5">
+                    <h4 class="smol"><u>Tools & Frameworks</u></h4>
+                    <ul class="text-left">
+                      <li class="smol">Node.js</li>
+                      <li class="smol">NPM Inquirer</li>
+                      <li class="smol">MySQL Database</li>
+                      <li class="smol">NPM cli-table2 for pretty printing MySQL queries</li>
+                      <li class="smol">NPM colors for more pretty printing features</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </a>
+            </div>
+    
+            <div class="asset-thing-container">
+              <img class="asset-pic" alt="console-word-guess" src="assets/images/word-guess-console.jpg">
+              <a href="https://github.com/androosk/constructor-word-guess" target="_blank">
+              <div class="overlay">
+                <h4 class="text"><u>Console Word Guess Game</u></h4>
+                <div class="row">
+                  <div class="col-5">
+                    <h4 class="smol"><u>Functions</u></h4>
+                    <p class="text-left smol">A word guess game that runs in the Command Line Interface (CLI) using javascript object constructors</p>
+                  </div>
+                  <div class="col-1"></div>
+                  <div class="col-5">
+                    <h4 class="smol"><u>Tools & Frameworks</u></h4>
+                    <ul class="text-left">
+                      <li class="smol">Node.js</li>
+                      <li class="smol">NPM Inquirer</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              </a>
+            </div>
+    
+            <div class="asset-thing-container">
+              <img class="asset-pic" alt="console-LIRI-bot" src="assets/images/liri-console.jpg">
+              <a href="https://github.com/androosk/liri-node-app" target="_blank">
+              <div class="overlay">
+                <h4 class="text"><u>Console LIRI Bot</u></h4>
+                <div class="row">
+                  <div class="col-5">
+                    <h4 class="smol"><u>Functions</u></h4>
+                    <p class="text-left smol">Text Based SIRI type bot that does limited searches in OMDB, Bandsintown and Spotify APIs. Runs in Command Line Interface.</p>
+                  </div>
+                  <div class="col-1"></div>
+                  <div class="col-5">
+                    <h4 class="smol"><u>Tools & Frameworks</u></h4>
+                    <ul class="text-left">
+                      <li class="smol">Node.js</li>
+                      <li class="smol">NPM inquirer</li>
+                      <li class="smol">NPM dotenv</li>
+                      <li class="smol">NPM axios</li>
+                      <li class="smol">Moment.js</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              </a>
+            </div>
+    
+            <div class="asset-thing-container">
+              <img class="asset-pic" alt="parks-n-stops" src="assets/images/parksnstops.jpg">
+              <a href="https://github.com/kangkang0804/National-Parks" target="_blank">
+              <div class="overlay">
+                <h4 class="text"><u>Parks 'N' Stops</u></h4>
+                <div class="row">
+                  <div class="col-5">
+                    <h4 class="smol"><u>Functions</u></h4>
+                    <p class="text-left smol">Web app built on Google Maps and National Parks Service APIs that finds and navigates to National Parks sites and points of interest stops along the way.</p>
+                  </div>
+                  <div class="col-1"></div>
+                  <div class="col-5">
+                    <h4 class="smol"><u>Tools & Frameworks</u></h4>
+                    <ul class="text-left">
+                      <li class="smol">HTML, CSS, Javascript</li>
+                      <li class="smol">Firebase Database</li>
+                      <li class="smol">Google Maps API</li>
+                      <li class="smol">NPS and Openweather APIs</li>
+                      <li class="smol">Routeboxer</li>
+                      <li class="smol">Deployed to Heroku</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              </a>
+            </div>
+    
+            <div class="asset-thing-container">
+              <img class="asset-pic" alt="star wars rpg" src="assets/images/starwarsrpg.jpg">
+              <a href="https://github.com/androosk/Star-Wars-Themed-RPG-Game" target="_blank">
+              <div class="overlay">
+                <h4 class="text"><u>Star Wars Themed Basic RPG</u></h4>
+                <div class="row">
+                  <div class="col-5">
+                    <h4 class="smol"><u>Functions</u></h4>
+                    <p class="text-left smol">Web app basic RPG where you choose a character to play and fight other star wars characters in click play. Class project.</p>
+                  </div>
+                  <div class="col-1"></div>
+                  <div class="col-5">
+                    <h4 class="smol"><u>Tools & Frameworks</u></h4>
+                    <ul class="text-left">
+                      <li class="smol">HTML, CSS, Javascript</li>
+                      <li class="smol">Original artwork</li>
+                      <li class="smol">Deployed to github.io</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              </a>
+            </div>
+    
+            <div class="asset-thing-container">
+              <img class="asset-pic" alt="multiplayer rochambo" src="assets/images/mprps.jpg">
+              <a href="https://github.com/androosk/rps-multiplayer" target="_blank">
+              <div class="overlay">
+                <h4 class="text"><u>Two Player Rock Paper Scissors</u></h4>
+                <div class="row">
+                  <div class="col-5">
+                    <h4 class="smol"><u>Functions</u></h4>
+                    <p class="text-left smol">Web app built on Fireabase Realtime framework that allows two players to compete on separate devices in a classic game of Rock, Paper, Scissors.</p>
+                  </div>
+                  <div class="col-1"></div>
+                  <div class="col-5">
+                    <h4 class="smol"><u>Tools & Frameworks</u></h4>
+                    <ul class="text-left">
+                      <li class="smol">HTML, CSS, Javascript</li>
+                      <li class="smol">Firebase Realtime Database</li>
+                      <li class="smol">Two player chat function</li>
+                      <li class="smol">Full Mobile optimization</li>
+                      <li class="smol">Deployed to Firebase</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              </a>
+            </div>
+    
+            <div class="asset-thing-container">
+              <img class="asset-pic" alt="word guess game" src="assets/images/wordguess.jpg">
+              <a href="https://github.com/androosk/word-guess-game" target="_blank">
+              <div class="overlay">
+                <h4 class="text"><u>Word Guess Game</u></h4>
+                <div class="row">
+                  <div class="col-5">
+                    <h4 class="smol"><u>Functions</u></h4>
+                    <p class="text-left smol">1980s Themed web app allows user to guess up to ten 1980s slang words such as "radical" and "grody". Designed to look like early 1980s home computer BBS.</p>
+                  </div>
+                  <div class="col-1"></div>
+                  <div class="col-5">
+                    <h4 class="smol"><u>Tools & Frameworks</u></h4>
+                    <ul class="text-left">
+                      <li class="smol">HTML</li>
+                      <li class="smol">CSS</li>
+                      <li class="smol">Javascript</li>
+                      <li class="smol">Deployed to github.io</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </a>
         </div>
 
       <div class="invisible">

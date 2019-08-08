@@ -1,7 +1,7 @@
 const pageyStuff = [
   'design',
-  'Design is the intermediary between information and understanding.',
-  '-- Hans Hoffman',
+  '',
+  '',
   5,
   10,
   'develop',
@@ -28,8 +28,6 @@ $('.navbar-collapse ul li a').click(function() {
 })
 //Page switching and loading function
 function pageLoad() {
-  $('#section-quote').text(pageyStuff[parseInt(fnum)+1])
-  $('#section-author').text(pageyStuff[parseInt(fnum)+2])
   $('#design-button, #develop-button, #implement-button').removeClass()
   let currentPage = '#' + pageyStuff[parseInt(fnum)]
   let otherPageOne = '#'+ pageyStuff[parseInt(fnum) + pageyStuff[(parseInt(fnum)+3)]]
@@ -37,11 +35,25 @@ function pageLoad() {
   $(currentPage + '-button').addClass(pageyStuff[15])
   $(otherPageOne + '-button, ' + otherPageTwo + '-button').addClass(pageyStuff[16])
   $(otherPageOne + '-button, ' + otherPageTwo + '-button').addClass(pageyStuff[16])
-  $(currentPage + '-section').removeAttr('hidden')
-  $(otherPageOne + '-section, ' + otherPageTwo + '-section').attr('hidden', 'true')
 }
 //Initial page load
 pageLoad()
+
+function onScroll(e){
+  let scrollPos = $(document).scrollTop()
+  $("li>a").each(function(){
+    let currLink = $(this)
+    let refElement = $(currLink.attr("href"))
+    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+      $("li>a.active").removeClass("active")
+      currLink.addClass("active")
+    }
+  })
+}
+
+$(document).ready(function (){
+  $(document).on("scroll", onScroll)
+})
 
 document.addEventListener('DOMContentLoaded', function(event){
   let x = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
